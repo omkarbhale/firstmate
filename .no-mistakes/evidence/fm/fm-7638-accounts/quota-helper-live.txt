@@ -1,11 +1,10 @@
-$ (no list)
+### no list
 error: this home declares no config/claude-accounts; there is nothing to measure
-rc=2
-$ (list: ordinary + ~/.claude)
+exit=2
+### malformed
+error: config/claude-accounts must hold one account per line, each 'ordinary' or an absolute path, with no blank lines or control characters: /tmp/fm-lab.fa5vmj/config/claude-accounts
+exit=2
+### real ~/.claude
 claude-account-quota:
-  row: ordinary  root=/home/omkarb/.claude  scope=all_models  status=known  remaining=45%  spendPriority=-0.2688  runway=projected_exhaustion
-  row: /home/omkarb/.claude  root=/home/omkarb/.claude  scope=all_models  status=known  remaining=45%  spendPriority=-0.2655  runway=projected_exhaustion
-rc=0
-$ (malformed)
-error: config/claude-accounts must hold one account per line, each 'ordinary' or an absolute path, with no blank lines or control characters: /tmp/fm-lab.ulAYOX/config/claude-accounts
-rc=2
+  row: /home/omkarb/.claude  root=/home/omkarb/.claude  scope=all_models  status=known  remaining=35%  spendPriority=-1.0359  runway=projected_exhaustion  usableRunwaySeconds=111815  confidence=established
+exit=0

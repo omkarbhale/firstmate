@@ -24,7 +24,7 @@ ok - fm-control relaunch: a signed-out worker account pin refuses before the old
 ok - fm-control relaunch: the replacement follows the home's current worker account pin
 ok - fm-control relaunch: a declared account list keeps the account the task records
 ok - fm-control relaunch: only an explicit --account moves a task to another declared account
-ok - fm-control relaunch: undeclared, signed-out, unrecorded, retired, and wrong-runner accounts refuse before the old agent stops
+ok - fm-control relaunch: undeclared, newline-split, signed-out, unrecorded, retired, and wrong-runner accounts refuse before the old agent stops
 ok - fm-control relaunch: mate pins are re-read for Claude and Pi, and unusable pins refuse before stopping the agent
 ok - fm-control relaunch: a Pi replacement keeps the home's tool exclusions
 ok - fm-control relaunch: exclusion-list refusals happen before the running agent stops
